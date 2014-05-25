@@ -1,4 +1,7 @@
 body {
   margin: 10;
-  color: red;
+  color: blue;
+}
+#searchPannel {
+  margin-top: 100px;
 }

@@ -1,21 +1,328 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Share Gini Cab</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="css/style.css" rel="stylesheet" media="screen">
+<head>
+  <title>Share Gini Cab</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="js/vendor/bootstrap/dist/css/bootstrap.min.css">
+  <link href="css/style.css" rel="stylesheet" media="screen">
 
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="../../assets/js/html5shiv.js"></script>
-      <script src="../../assets/js/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class ="container">
-      <h1>Hello, world!</h1>
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="../../assets/js/html5shiv.js"></script>
+  <script src="../../assets/js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body id="page-top">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <header class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#headerLinks">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#page-top">Sharegini cab</a>
+      </header>
+      <div class="collapse navbar-collapse" id="headerLinks">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="hidden">
+            <a href="#page-top"></a>
+          </li>
+          <li class="page-scroll">
+            <a href="#">Facebook Icon</a>
+          </li>
+          <li class="page-scroll">
+            <a href="#">Google Icon</a>
+          </li>
+          <li class="page-scroll">
+            <a href="#">Tweeter Icon</a>
+          </li>
+          <li class="page-scroll">
+            <a href="#">Sign in</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </body>
+  </nav>
+  <article class="panel" id="searchPannel">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <iframe width="100%" height="300px" src="//www.youtube.com/embed/86R7d7Ny4LA?wmode=transparent" frameborder="0" allowfullscreen=""></iframe>
+        </div>
+        <div class="col-md-6">
+          <ul class="nav nav-tabs">
+            <li>
+              <a href="#hop" data-toggle="tab">Hop a Cab</a>
+            </li>
+            <li class="active">
+              <a href="#post" data-toggle="tab">Post a Cab</a>
+            </li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div class="tab-pane" id="hop">
+              <form action="">
+                <br>
+                <div class="row">
+                  <div class="form-group col-xs-12 floating-label-form-group">
+                    <input class="form-control" type="text" name="name" placeholder="Enter your name" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-xs-12 floating-label-form-group">
+                    <input class="form-control" type="date" name="name" placeholder="Enter date of journey" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-xs-12 floating-label-form-group">
+                    <input class="form-control" type="time" name="name" placeholder="Enter date of journey" />
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="form-group col-xs-12">
+                    <button type="submit" class="btn btn-lg btn-success">Send Request</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="tab-pane active" id="post">
+              <form action="">
+                <br>
+                <div class="row">
+                  <div class="form-group col-xs-12 floating-label-form-group">
+                    <input class="form-control" type="text" name="name" placeholder="Enter your location" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-xs-12 floating-label-form-group">
+                    <input class="form-control" type="date" name="name" placeholder="Enter date of journey" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-xs-12 floating-label-form-group">
+                    <input class="form-control" type="time" name="name" placeholder="Enter date of journey" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-xs-12 floating-label-form-group">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-default active">Female</button>
+                      <button type="button" class="btn btn-default">Male</button>
+                      <button type="button" class="btn btn-default">Any</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-xs-12 floating-label-form-group">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-default active">Car</button>
+                      <button type="button" class="btn btn-default">Sedan</button>
+                      <button type="button" class="btn btn-default">SUV</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-xs-12 floating-label-form-group">
+                    <input class="form-control" type="number" name="name" placeholder="Enter date of journey" />
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="form-group col-xs-12">
+                    <button type="submit" class="btn btn-lg btn-success">Post</button>
+
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+  <article class="panel" id="registerPannel">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Sign In</h4>
+          <form action="">
+            <ul class="nav nav-pills">
+              <li>
+                <a href="#">Sign In with Facebook</a>
+              </li>
+              <li>
+                <a href="#">Sign In with Tweeter</a>
+              </li>
+              <li>
+                <a href="#">Sign In with Google+</a>
+              </li>
+            </ul>
+            <hr>
+            <div class="row">
+              <div class="form-group col-xs-12 floating-label-form-group">
+                <input class="form-control" type="text" name="name" placeholder="Enter your email" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-xs-12 floating-label-form-group">
+                <input class="form-control" type="password" name="name" placeholder="Enter your password" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-xs-12">
+                <button type="submit" class="btn btn-lg btn-success">Hop In</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-xs-12">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox">Check me out</label>
+                </div>
+                <div class="forgot">
+                  <a href="#">forgot password?</a>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <h4>Register</h4>
+          <form action="">
+            <div class="row">
+              <div class="form-group col-xs-12 floating-label-form-group">
+                <input class="form-control" type="text" name="name" placeholder="First Name" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-xs-12 floating-label-form-group">
+                <input class="form-control" type="text" name="name" placeholder="Last Name" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-xs-12 floating-label-form-group">
+                <input class="form-control" type="email" name="name" placeholder="Email" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-xs-12 floating-label-form-group">
+                <input class="form-control" type="number" name="name" placeholder="Phone" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-xs-12 floating-label-form-group">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default active">Female</button>
+                  <button type="button" class="btn btn-default">Male</button>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-xs-12 floating-label-form-group">
+                <textarea class="form-control" type="text" name="name" placeholder="Address" ></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-xs-12">
+                <button type="submit" class="btn btn-lg btn-success">Register</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </article>
+  <article class="panel" id="registerPannel">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <h4>Cabs</h4>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div>Name 1</div>
+              <ul class="list-group">
+                <li class="list-group-item">Cab mate 1</li>
+                <li class="list-group-item">Cab mate 2</li>
+                <li class="list-group-item">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox">Vacant</label>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="list-group-item">
+              <div>Name 2</div>
+              <ul class="list-group">
+                <li class="list-group-item">Cab mate 1</li>
+                <li class="list-group-item">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox">Vacant</label>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox">Vacant</label>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-8">
+          <iframe src="http://mapsengine.google.com/map/embed?mid=z-BEFzFo7gdM.kYdiUKVQpQQI" width="100%" height="480"></iframe>
+        </div>
+        <div class="col-md-2">
+          <h4>Looking for hopping</h4>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox">Name 1</label>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox">Name 2</label>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox">Name 3</label>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox">Name 4</label>
+              </div>
+            </li>
+          </ul>
+          <div class="row">
+            <div class="form-group col-xs-12">
+              <button type="submit" class="btn btn-lg btn-success">Book a Cab</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+  <footer>
+    <div class="container">
+      <div class="row">footer</div>
+    </div>
+  </footer>
+  <script src="//localhost:35729/livereload.js"></script>
+  <script type="text/javascript" src="js/vendor/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="js/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/app/app.js"></script>
+</body>
 </html>
